@@ -5,7 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 3f; //TODO:Remove [SerializeField] after setting up a suitable value.
+
+    public float GetMoveSpeed()
+    {
+        return _moveSpeed;
+    }
     [SerializeField] private float _jumpForce = 6f; //TODO:Remove [SerializeField] after setting up a suitable value.
+    
     private float _groundCheckRadius = 0.1f;
     private float _jumpCooldown = 0.02f;
     
