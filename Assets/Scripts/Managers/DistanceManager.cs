@@ -15,6 +15,6 @@ public class DistanceManager : MonoBehaviour
     void Update()
     {
         _totalDistance += player.GetMoveSpeed() * Time.deltaTime;
-        _distanceText.text = $"{(int)_totalDistance}m";
+        _distanceText.text = $"Distance:{(int)_totalDistance}m";
     }
 }
